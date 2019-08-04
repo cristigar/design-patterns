@@ -1,0 +1,23 @@
+{
+    "name": "cristigar/design-patterns-for-humans",
+    "authors": [
+        {
+            "name": "Cristian Garabagiu",
+            "email": "cristian.garabagiu@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DesignPatternsForHumans\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DesignPatternsForHumans\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3"
+    }
+}
