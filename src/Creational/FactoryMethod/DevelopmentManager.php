@@ -1,0 +1,12 @@
+<?php
+declare(strict_types=1);
+
+namespace DesignPatternsForHumans\Creational\FactoryMethod;
+
+final class DevelopmentManager extends HiringManager
+{
+    protected function makeInterviewer(): Interviewer
+    {
+        return new Developer();
+    }
+}
