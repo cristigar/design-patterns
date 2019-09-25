@@ -7,3 +7,8 @@ There are some tests too.
 ```bash
 ./vendor/bin/phpunit
 ```
+
+## Running static analysis
+```bash
+./vendor/bin/phpstan analyse src/ -l max
+```
