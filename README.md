@@ -3,12 +3,12 @@
 Playing with design patterns while reading [Design patterns for humans](https://github.com/kamranahmedse/design-patterns-for-humans).
 There are some tests too.
 
-## Running the tests
+## Run the tests
 ```bash
-./vendor/bin/phpunit
+composer test
 ```
 
-## Running static analysis
+## Get coverage report
 ```bash
-./vendor/bin/phpstan analyse src/ -l max
+composer test-coverage
 ```
