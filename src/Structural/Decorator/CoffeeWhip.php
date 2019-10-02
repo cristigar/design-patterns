@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace DesignPatternsForHumans\Structural\Decorator;
 
-class MilkCoffee implements Coffee
+class CoffeeWhip implements Coffee
 {
     /**
      * @var Coffee
@@ -30,7 +30,7 @@ class MilkCoffee implements Coffee
 
     public function getPrice(): int
     {
-        return (int) round($this->someCoffee->getPrice() * (1 + $this->valueAdded / 100));
+        return $this->someCoffee->getPrice() + $this->valueAdded;
     }
 
     public function getDescription(): string
